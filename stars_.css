@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  height: 100vh;
+}
+
+/* bintang kecil */
+#stars {
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  box-shadow:
+    50px 100px white,
+    150px 200px white,
+    250px 300px white,
+    350px 400px white,
+    450px 500px white,
+    550px 600px white,
+    650px 700px white,
+    750px 800px white,
+    850px 900px white,
+    950px 1000px white,
+    1050px 1100px white,
+    1150px 1200px white,
+    1250px 1300px white,
+    1350px 1400px white,
+    1450px 1500px white,
+    1550px 1600px white,
+    1650px 1700px white,
+    1750px 1800px white,
+    1850px 1900px white,
+    1950px 2000px white;
+  animation: animStar 100s linear infinite;
+}
+
+/* bintang sedang */
+#stars2 {
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  box-shadow:
+    100px 150px white,
+    200px 300px white,
+    400px 500px white,
+    600px 700px white,
+    800px 900px white,
+    1000px 1100px white,
+    1200px 1300px white,
+    1400px 1500px white,
+    1600px 1700px white,
+    1800px 1900px white;
+  animation: animStar 150s linear infinite;
+}
+
+/* bintang besar */
+#stars3 {
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  box-shadow:
+    300px 400px white,
+    700px 800px white,
+    1100px 1200px white,
+    1500px 1600px white,
+    1900px 2000px white;
+  animation: animStar 200s linear infinite;
+}
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-2000px);
+  }
+}
